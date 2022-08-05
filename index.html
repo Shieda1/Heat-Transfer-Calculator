@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heat Transfer Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="heatTransferRadio" name="variables" checked>
+  <label for="heatTransferRadio">Heat Transfer</label>
+
+  <input type="radio" id="massRadio" name="variables">
+  <label for="massRadio">Mass</label>
+
+  <input type="radio" id="specificHeatRadio" name="variables">
+  <label for="specificHeatRadio">Specific Heat</label>
+
+  <input type="radio" id="temperatureDifferenceRadio" name="variables">
+  <label for="temperatureDifferenceRadio">Temperature Difference</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">(m) Mass (kg)</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">(c) Specific Heat (kj/kg K)</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">(ΔT) Temperature Difference (k)</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button> 
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
